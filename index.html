@@ -7,14 +7,37 @@
 
   </head>
     <body>
-    <a-scene>
-      <a-sky color="lightblue"></a-sky>
+    <a-scene  fog="type: linear; color: lightblue; " >
+
+      <a-sky src="BlueSkies.jpg"></a-sky>
+
+      <a-assets>
+        <audio id="nature" 
+        src="nature.mp3"
+         preload="auto"
+        autoplay="true"
+        loop="true"
+        ></audio>
+      </a-assets>
+
+      <a-entity ply-model="src: Bunny 4.0.ply"
+       rotation="-90.00021045914971
+        -23.923279777892393 0"
+         position="9.04736 -1.12178 -16.29721"
+          scale="0.5 0.5 0.5"></a-entity>
+
+      <a-entity ply-model="src: Bunny 4.0.ply"
+       rotation="-90.00021045914971 -23.9 0"
+        position="9.04736 -1.12178 -16.29721" 
+        scale="0.5 0.5 0.5"
+        ></a-entity>
+
       
       <a-entity ply-model="src: TreeCenter.ply"
-       position="5 -4.15 4.5" 
-       rotation="-90 20 0"
-       scale="2 2 3"
-       ></a-entity>
+       position="6.80757 -3.85214 7.75284"
+        rotation="-90 20 0"
+         scale="2 2 2.49247"
+         ></a-entity>
 
        <a-entity ply-model="src: D-tech Models/Flowers Big.ply"
        position="0 -2.1 4" 
@@ -22,18 +45,287 @@
        
        ></a-entity>
 
-       
-      <a-plane
-      color="#369d3b"
-      scale="50 50"
-      rotation="-90 0 0"
-      ></a-plane>
+      <a-entity ply-model="src: Carrot.ply"
+       rotation="-90 14.999999999999998 0"
+        position="-10.82203 -1.03223 -13.49279"
+         scale="0.5 0.5 0.5"></a-entity>
 
-      <a-entity camera="active: true"
-       look-controls wasd-controls position="0 1.6 6"
-        ></a-entity
-                 
- 
+      <a-entity ply-model="src: Hill.ply"
+        position="14.15543 -2 6.90514"
+        rotation="-90 80 0"
+      ></a-entity>
+
+
+       
+       <a-entity ply-model="src: Hill.ply"
+        position="14.15543 -2 6.90514"
+         rotation="-90 80 0"></a-entity>
+
+         <a-entity ply-model="src: Tree 1.ply"
+          rotation="-90.00021045914971 126.73539949396243 0" 
+          position="-5 -4 0"
+          scale="2 2 2"
+          ></a-entity>
+
+          
+         <a-entity ply-model="src: Tree 1.ply"
+         rotation="-90 190 0" 
+         position="-10 -4.3 -4"
+         scale="2 2 2"
+         ></a-entity>
+
+         <a-entity ply-model="src: Tree 1.ply"
+         rotation="-90.00021045914971 126.73539949396243 0" 
+         position="-2 -3.8 -2"
+         scale="1.8 1.8 1.8"
+         ></a-entity>
+
+      
+
+         <a-entity ply-model="src: Hill.ply"
+          rotation="-90.00021045914971 127.99189593868435 0"
+          position="-8.3291 -4.3 20.14714"
+           scale="1.8759 1.51416 2.30525"
+           ></a-entity>
+
+        
+         <a-entity ply-model="src: Cloud 1.ply "
+         rotation="-90 126.74 0" 
+         position="0 8 0"
+         scale="2 2 2"
+         animation="
+         property:position ; 
+         from:-22 10 0;
+         to: 22 10 0; 
+         dur: 9000; 
+         loop: true; 
+         "
+         animation__opacity="
+         property: opacity; 
+         from:1;
+         to:0.5;
+         dur: 4000;
+         dir: alternate;
+         loop: true; 
+         "
+         ></a-entity>
+
+         <a-entity ply-model="src: Cloud 2.ply "
+         rotation="-90 126.74 0" 
+         position="0 8 0"
+         scale="2 2 2"
+         opacity="0.5"
+         animation="
+         property:position ; 
+         from:-22 10 16;
+         to: 22 10 16; 
+         dur: 12000; 
+         loop: true; 
+         "
+         animation__opacity="
+         property: opacity; 
+         from:1;
+         to:0.5;
+         dur: 1000;
+         dir: alternate;
+         loop: true; 
+         "
+         ></a-entity>
+         
+         <a-entity ply-model="src: Cloud 3.ply "
+         rotation="-90 126.74 0" 
+         position="0 8 0"
+         scale="2 2 2"
+         opacity="0.5"
+         animation="
+         property:position ; 
+         from:-22 10 -6;
+         to: 22 10 -6; 
+         dur: 10000; 
+         loop: true; 
+         "
+         animation__opacity="
+         property: opacity; 
+         from:1;
+         to:0.5;
+         dur: 1000;
+         dir: alternate;
+         loop: true; 
+         "
+         ></a-entity>
+
+         <a-entity ply-model="src: Hill.ply"
+          rotation="-89.99963750135457 -16.47998506134787 0"
+           position="-21.50865 -6.03324 27.82116" 
+           scale="1.8759 1.51416 2.30525"
+           ></a-entity>
+
+
+         <a-entity ply-model="src: Hill.ply"
+          rotation="-89.99963750135457 -16.47998506134787 0" 
+          position="-21.50865 -6.03324 27.82116"
+           scale="1.8759 1.51416 2.30525"
+           ></a-entity>
+         
+         <a-entity ply-model="src: Hill.ply" 
+         rotation="-89.99963750135457 30.25732820306364 0" 
+         position="15.02415 -6.7319 36.62487" 
+         scale="1.8759 1.51416 2.30525"
+         ></a-entity>
+         
+         <a-entity ply-model="src: Hill.ply"
+          rotation="-89.99963750135457 35.56291738597506 0" 
+          position="-26.55464 -6.37196 -6.89708" 
+          scale="1.8759 1.51416 3.21415"
+          ></a-entity>
+         
+         <a-entity ply-model="src: Hill.ply" 
+         rotation="-89.99963750135457 86.90222766087734 0" 
+         position="-20.51648 -4.29992 19.48757" 
+         scale="3.89562 1.51416 2.47435"
+         ></a-entity>
+         
+         <a-entity ply-model="src: Hill.ply"
+          rotation="-89.99963750135457 86.90222766087734 0"
+          position="-20.51648 -5.48469 19.48757"
+           scale="3.89562 1.51416 2.47435"
+           ></a-entity>
+
+
+         <a-entity ply-model="src: Hill.ply"
+          rotation="-89.99963750135457 93.11251720230034 0"
+           position="38.42238 -4.98825 21.1444" 
+           scale="3.82308 1.51416 2.30525"
+           ></a-entity>
+         
+         <a-entity ply-model="src: Hill.ply"
+          rotation="-89.99963750135457 172.10047883903565 0" 
+          position="19.79155 -6.88775 19.09436" 
+          scale="3.6367 1.51416 2.30525"
+          ></a-entity>
+         
+         <a-entity ply-model="src: Hill.ply" 
+         rotation="-89.99963750135457 -176.0326881870185 0" 
+         position="22.42242 -4.46563 -37.72949"
+          scale="3.99095 1.51416 2.30525"
+          ></a-entity>
+         
+          <a-entity ply-model="src: Tree 1.ply"
+           rotation="-90. 126.74 0"
+            position="-4.16 -3.8 -14.9"
+             scale="1.8 1.8 1.8"></a-entity>
+
+          <a-entity ply-model="src: Tree 1.ply" 
+          rotation="-90 100.91 0" 
+          position="-7.90675 -4.3 -8.65" 
+          scale="2 2 2"
+          ></a-entity>
+          
+          <a-entity ply-model="src: Tree 1.ply" 
+          rotation="-90 143.3 0"
+           position="21.1 -4.3 -16.79"
+            scale="2 2 2"
+            ></a-entity>
+          
+          <a-entity ply-model="src: Tree 1.ply"
+           rotation="-89.99963750135457 -59.24956559447843 0"
+            position="2.94205 -4.31892 -20.91019" 
+            scale="1.8 1.8 2.1983"
+            ></a-entity>
+          
+          <a-entity ply-model="src: D-tech Models/Flowers Big.ply" 
+          position="7.77911 -2.09572 -13.59606"
+           rotation="-90.00021045914971 -166.26433073783306 0"
+           ></a-entity>
+          
+          <a-entity ply-model="src: D-tech Models/Flowers Big.ply"
+           position="-10.24493 -2.09575 -1.65897"
+           rotation="-90.00021045914971 -166.26433073783306 0"
+          ></a-entity>
+          
+          <a-entity ply-model="src: D-tech Models/Flowers Big.ply" 
+          position="-2.9503 0.65904 -31.59599"
+           rotation="-90.00021045914971 -166.26433073783306 0"
+          ></a-entity>
+          
+          <a-entity ply-model="src: Hill.ply"
+           rotation="-90.00021045914971 127.99189593868435 0"
+           position="-8.3291 -4.57399 20.14714" 
+          scale="1.8759 1.51416 2.30525"
+          ></a-entity>
+          
+          <a-entity ply-model="src: Tree 1.ply"
+           rotation="-90 190 0"
+            position="-10 -4.3 -4"
+             scale="2 2 2"></a-entity>
+
+           <a-entity ply-model="src: Tree 1.ply" 
+             rotation="-90 190 0"
+             position="24.43998 -3.42788 14.68509"
+            scale="2 2 2"
+           ></a-entity>
+
+          <a-entity ply-model="src: Tree 1.ply"
+          rotation="-90 190 0" 
+          position="-15.25053 -1.00785 11.63961" 
+          scale="2 2 2"
+          ></a-entity>
+
+          <a-entity ply-model="src: Tree 1.ply"
+          rotation="-90 190 0" 
+          position="5.99928 -4.23437 19.46786" 
+          scale="2 2 2"></a-entity>
+
+          <a-entity ply-model="src: Bunny 2.0.ply" 
+            rotation="-90 15.2 0"
+            position="-10.3 -1.15 -0.56"
+            scale="0.5 0.5 0.5"
+          ></a-entity>
+
+
+          <a-entity ply-model="src: Carrot.ply"
+           rotation="-90 14.999999999999998 0"
+            position="0 -1.03223 0"
+             scale="0.5 0.5 0.5"></a-entity>
+
+          <a-entity ply-model="src: Carrot.ply" 
+          rotation="-90 14.999999999999998 0" 
+          position="-11.37539 -1.03223 0"
+           scale="0.5 0.5 0.5"></a-entity>
+
+
+
+
+
+
+         
+        <a-light id="dir"
+        type="directional" 
+        position="-.5 1.8 9"
+        rotation="90 0 0"
+        color="#ffffc5"
+        intensity="1.5"
+        light="castShadow: true" 
+        ></a-light>
+
+        <a-light id="dir"
+        type="ambient" 
+        color="688b65"
+        intensity="0.45"
+        light="castShadow: true" 
+        ></a-light>
+
+        <a-plane
+        color="#369d3b"
+        scale="50 50"
+        rotation="-90 0 0"
+        ></a-plane>
+
+        <a-entity camera="active: true"
+        look-controls wasd-controls position="-.5 1.8 9"
+          ></a-entity
+                  
+  
       
 
     </a-scene>
